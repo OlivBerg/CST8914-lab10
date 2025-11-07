@@ -64,8 +64,9 @@ class MenuButtonActions {
       if (item !== newMenuitem) {
         item.tabIndex = 0;
         newMenuitem.focus();
+      } else {
+        item.tabIndex = -1;
       }
-      item.tabIndex = -1;
 
       // TOUFIC'S COMMENT: Placeholder for the roving tabindex logic  ;)
     });
